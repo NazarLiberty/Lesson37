@@ -1,0 +1,152 @@
+body {
+  overflow: auto;
+}
+
+.wrapper {
+  -webkit-transition: .7s ease all;
+  transition: .7s ease all;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: middle;
+  margin: 10px;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.wrapper--active {
+  cursor: pointer;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.wrapper--hide_black-numbers {
+  -webkit-transform: translateX(-400%);
+          transform: translateX(-400%);
+}
+
+.wrapper--hide_black-after10 {
+  -webkit-transform: translateX(400%);
+          transform: translateX(400%);
+}
+
+.wrapper--hide_red-numbers {
+  -webkit-transform: translateY(-400%);
+          transform: translateY(-400%);
+}
+
+.wrapper--hide_red-after10 {
+  -webkit-transform: translateY(400%);
+          transform: translateY(400%);
+}
+
+.card {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  width: 140px;
+  height: 210px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card--red {
+  color: red;
+}
+
+.card__background {
+  border-radius: 10px;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 100%;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 1;
+}
+
+.card .top-symbol {
+  display: block;
+  font-size: 25px;
+}
+
+.top-value {
+  position: absolute;
+  top: 10px;
+  left: 3px;
+  font-size: 21px;
+  line-height: 90%;
+}
+
+.bottom-symbol {
+  font-size: 25px;
+  display: block;
+}
+
+.bottom-value {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+  padding-right: 5px;
+  position: absolute;
+  bottom: 10px;
+  right: 2px;
+  font-size: 21px;
+  line-height: 90%;
+}
+
+.middle-value {
+  font-size: 2.5em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 170px;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.middle-value div {
+  text-align: center;
+  width: 50%;
+}
+
+.middle-value__absolute-top {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+}
+
+.middle-value__absolute-bottom {
+  position: absolute;
+  top: 55%;
+  left: 25%;
+}
+
+.middle-value__after10 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-transform: uppercase;
+  font-size: 80px;
+}
+/*# sourceMappingURL=style.css.map */
