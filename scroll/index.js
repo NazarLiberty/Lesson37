@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    scrollAnimation()
+    setTimeout(scrollAnimation, 3500)
 })
 
 function scrollAnimation() {
